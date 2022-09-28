@@ -1,0 +1,84 @@
+html {
+    background: #018DED url(https://unsplash.it/1500/1000?image=881&blur=5);
+    background-size: cover;
+    font-family: 'helvetica neue';
+    text-align: center;
+    font-size: 10px;
+  }
+
+  body {
+    margin: 0;
+    font-size: 2rem;
+    flex: 1;
+    min-height: 100vh;
+    align-items: center;
+  }
+  h1{
+      font-family: 'Lucida Sans';
+      color: rgb(15, 17, 16);
+      margin-top: 60px;
+  }
+
+  .clock {
+    width: 30rem;
+    height: 30rem;
+    border: 20px solid rgba(59, 230, 193, 0.856);
+    border-radius: 50%;
+    margin: 80px auto;
+    position: relative;
+    padding: 2rem;
+    box-shadow:
+      0 0 0 4px rgba(0,0,0,0.1),
+      inset 0 0 0 3px #0c0b0b,
+      inset 0 0 10px rgb(236, 9, 9),
+      0 0 10px rgba(228, 8, 8, 0.918);
+  }
+
+  .clock-face {
+    position: relative;
+    width: 100%;
+    height: 90%;
+    transform: translateY(-3px); /* account for the height of the clock hands */
+  }
+  .clock-face .twelve {
+      font-size: larger;
+      font-family: 'Franklin Gothic Medium';
+      color: rgb(14, 13, 13);
+      margin-top: 2px;
+      
+  }
+  .clock-face .three {
+      float: right;
+      font-family: 'Franklin Gothic Medium';
+      font-size: larger;
+      margin-top: 75px;
+      color: rgb(12, 11, 11);
+
+  }
+  .clock-face .nine {
+      float: left;
+      margin-bottom: 2px;
+      font-family: 'Franklin Gothic Medium';
+      font-size: larger;
+      color: rgb(20, 18, 18);
+      margin-top: 75px;
+  }
+  .clock-face .six {
+      margin-top: 85%;
+      font-family: 'Franklin Gothic Medium';
+      font-size: larger;
+      color: rgb(12, 11, 11);
+  }
+
+  .hand {
+    width: 50%;
+    height: 6px;
+    background: black;
+    position: absolute;
+    top: 50%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+    border-radius: 5px;
+  }
